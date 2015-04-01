@@ -1,0 +1,21 @@
+# Site settings
+title: JACKSAY.COM
+email: jacksay@jacksay.com
+description: > # Cours et tutoriaux pour le web. Formations pour le 
+  développement web et le webdesign.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+twitter_username: jekyllrb
+github_username:  jekyll
+
+# Build settings
+markdown: redcarpet
+#highlighter: pygments
+
+permalink: none
+
+contentsLabel: "Table des matières"
+
+collections:
+  slides:
+    output: true
