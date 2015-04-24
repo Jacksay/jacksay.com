@@ -1,0 +1,65 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+@import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap";
+
+
+pre {
+	white-space: normal;
+}
+
+.syntaxhighlighter {
+    background-color: #FFF !important;
+    border: thin solid #ccc;
+    padding: .5em .5em 0 0;
+}
+
+.site-footer {
+	font-size: .75em;
+}
+.syntaxhighlighter .container {
+//	top: -.75em !important;
+}	
+.toc {
+	font-size: .9em;
+}
+
+@mixin border-radius($radius: 8px){
+	border-radius: $radius;
+}
+.darkarea {
+	background: #555;
+	color: #111;
+	border-top: #333 thin solid;
+	box-shadow: inset 0 1em 2em rgba(#000, .25);
+	text-shadow: -1px 1px 1px rgba(#000, .3), 1px -1px 0 rgba(#fff, .2);
+}
+
+////////////////////////////////////////////////////////////////////////////////
+//
+// POSTS
+//
+////////////////////////////////////////////////////////////////////////////////
+.post-tags {
+	font-size: .75em;
+	margin: 0;
+	padding: 0;
+
+	&:before {
+		content: "Mots-clefs : ";
+		color: #777;
+	}
+	
+	li {
+		display: inline;
+		line-height: 1.25em;
+		background: #999;
+		color: #fff;
+		padding: .25em .5em;
+
+		text-shadow: -1px 1px 1px rgba(#000, .3), 1px -1px 0 rgba(#fff, .2);
+		@include border-radius(.5em)
+	}
+}

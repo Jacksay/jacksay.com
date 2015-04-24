@@ -1,5 +1,5 @@
 {
-  "name": "SupportDeCours",
+  "name": "jacksay.com",
   "version": "0.0.0",
   "authors": [
     "jacksay <jacksay@jacksay.com>"
@@ -12,5 +12,11 @@
     "vendor",
     "test",
     "tests"
-  ]
+  ],
+  "homepage": "https://github.com/Jacksay/jacksay.com",
+  "dependencies": {
+    "SyntaxHighlighter": "~3.0.83",
+    "reveal.js": "~3.0.0",
+    "bootstrap-sass": "~3.3.4"
+  }
 }
